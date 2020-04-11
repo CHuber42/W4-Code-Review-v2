@@ -1,0 +1,122 @@
+html, body, .container {
+  height: 100vh;
+  width: 100vw;
+  
+}
+form {
+  width: 100vw;
+
+}
+
+body {
+  font-family: 'IM Fell French Canon SC', serif;
+  overflow-x: hidden;
+  background-color: aquamarine;
+}
+
+h1{
+  text-align: center;
+
+  width: 60vw;
+  margin: auto;
+  height: 0vh;
+  padding-bottom: none;
+}
+
+
+
+#basics, #meats, #vegetables {
+  float: right;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-right: 5vw;
+}
+
+#vegetables, #meats, #basics {
+  margin-top: 5vh;
+}
+#meats, #vegetables {
+  display: none;
+}
+
+.div-switch {
+  color: blue;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+#checkout {
+  margin-left: 31vw;
+  height: 5vh;
+  width: 10vw;
+  font-weight: 900;
+  font-size: large;
+}
+#total-display {
+  height: 5vh;
+  margin-left: 47vw;
+  width: 15vw;
+  font-weight: 800;
+  font-size: x-large;
+}
+
+#total {
+  font-size: xx-large;
+  font-weight: 900;
+}
+
+#pizza-image{
+  width: 40vw;
+  float: left;
+  margin-left: 32vw;
+  margin-top: 20vh;
+}
+#pizza-image::after {
+  content: '';
+  display: table;
+}
+.topping{
+  float: left;
+  width: 26vw;
+  margin-top: -55vh;
+  margin-left: 2vw;
+  position: relative;
+  display: none;
+}
+#pepperoni {
+  z-index: 1;
+}
+#bacon {
+  z-index: 4;
+}
+#italian {
+  z-index: 3;
+}
+#ham {
+  z-index: 2;
+}
+#mush {
+  z-index: 6;
+}
+#bell {
+  z-index: 7;
+}
+#banana {
+  z-index: 8;
+}
+#jalapenos {
+  z-index: 9;
+}
+#olives {
+  z-index: 10;
+}
+#roma {
+  z-index: 11;
+}
+#spinach {
+  z-index: 5;
+}
+#onions {
+  z-index: 12;
+}

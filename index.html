@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel='stylesheet' href='css/styles.css' type='text/css'>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title></title>    
+  </head>
+  <body>
+    <div class="container">
+      
+      <form id="new-pizza"> 
+        <h1>Welcome to the only Pizza Shop in town!<br> 14": $12.00 // 16": $15.00 // 18": $18.00<br>$1 per meat order ($2 for "extra") // $.50 per veggie order ($1 for "extra")<br>Please order on the right.</h1>
+
+        <div id="pizza-image"> <!--Images taken WITHOUT PERMISSION from pizzahut.com-->
+          <img src="img/base.webp">
+          <img src="img/pepperoni.webp" class="topping" id="pepperoni">
+          <img src="img/bacon.webp" class="topping" id="bacon">
+          <img src="img/italian.webp" class="topping" id="italian">
+          <img src="img/ham.webp" class="topping" id="ham">
+          <img src="img/mush.webp" class="topping" id="mush">
+          <img src="img/bell.webp" class="topping" id="bell">
+          <img src="img/banana.png" class="topping" id="banana">
+          <img src="img/jalapenos.webp" class="topping" id="jalapeno">
+          <img src="img/olives.webp" class="topping" id="olives">   
+          <img src="img/roma.png" class="topping" id="roma">
+          <img src="img/spinach.webp" class="topping" id="spinach">
+          <img src="img/onions.webp" class="topping" id="onions"> 
+        </div>
+        
+        <div id="basics">  
+          
+          <label for="size">Pizza Diameter</label><br>
+          <input type="radio" checked="checked" value="14" name="size">14"</input><br>
+          <input type="radio" value="16" name="size">16"</input><br>
+          <input type="radio" value="18" name="size">18"</input><br>
+              
+          <label for="crust">Crust Type</label><br>
+          <input type="radio" checked="checked" value="thin" name="crust">Thin</input><br>      
+          <input type="radio" value="roastedGarlic" name="crust">Roasted Garlic</input><br>
+          <input type="radio" value="pan" name="crust">Pan (add $1.00)</input><br>
+          <input type="radio" value="stuffed" name="crust">Stuffed (add $2.00)</input><br>
+          
+          <label for="cheese">Cheese</label><br>
+          <input type="radio" checked="checked" value="none" name="cheese">None</input><br>
+          <input type="radio" value="light" name="cheese">Light</input><br>
+          <input type="radio" value="normal" name="cheese">Normal</input><br>
+          <input type="radio" value="extra" name="cheese">Extra (add $1.00)</input><br>
+          <p class="div-switch" id="show-meat"><br>Add Meats</p>
+          <button class="btn" type="submit">Add Pizza</button>
+        </div>
+      
+        <div id="meats">
+          <label for="pepperoni">Pepperoni</label><br>
+          <input type="radio" value="0" checked="checked" name="pepperoni">None</input><br>
+          <input type="radio" value="1" name="pepperoni">Normal</input><br>
+          <input type="radio" value="2" name="pepperoni">Extra</input><br>
+          
+          <label for="italiansausage">Italian Sausage</label><br>
+          <input type="radio" value="0" checked="checked" name="italiansausage">None</input><br>
+          <input type="radio" value="1" name="italiansausage">Normal</input><br>
+          <input type="radio" value="2" name="italiansausage">Extra</input><br>
+                
+          <label for="bacon">Bacon</label><br>
+          <input type="radio" value="0" checked="checked" name="bacon">None</input><br>
+          <input type="radio" value="1" name="bacon">Normal</input><br>
+          <input type="radio" value="2" name="bacon">Extra</input><br>
+            
+          <label for="ham">Canadian Ham</label><br>
+          <input type="radio" value="0" checked="checked" name="ham">None</input><br>
+          <input type="radio" value="1" name="ham">Normal</input><br>
+          <input type="radio" value="2" name="ham">Extra</input><br>
+          <p class="div-switch" id="show-veg"><br>Add Veggies</p>
+          <button class="btn" type="submit">Add Pizza</button>
+        </div>
+
+        <div id="vegetables">
+          <label for="mushrooms">Mushrooms</label><br>
+          <input type="radio" value="0" checked="checked" name="mushrooms">None</input><br>
+          <input type="radio" value="1" name="mushrooms">Normal</input><br>
+          <input type="radio" value="2" name="mushrooms">Extra</input><br>
+
+          <label for="spinach">Spinach</label><br>
+          <input type="radio" value="0" checked="checked" name="spinach">None</input><br>
+          <input type="radio" value="1" name="spinach">Normal</input><br>
+          <input type="radio" value="2" name="spinach">Extra</input><br>
+
+          <label for="onions">Onions</label><br>
+          <input type="radio" value="0" checked="checked" name="onions">None</input><br>
+          <input type="radio" value="1" name="onions">Normal</input><br>
+          <input type="radio" value="2" name="onions">Extra</input><br>
+
+          <label for="olives">Olives</label><br>
+          <input type="radio" value="0" checked="checked" name="olives">None</input><br>
+          <input type="radio" value="1" name="olives">Normal</input><br>
+          <input type="radio" value="2" name="olives">Extra</input><br>
+
+          <label for="peppers">Bell Peppers</label><br>
+          <input type="radio" value="0" checked="checked" name="peppers">None</input><br>
+          <input type="radio" value="1" name="peppers">Normal</input><br>
+          <input type="radio" value="2" name="peppers">Extra</input><br>
+
+          <label for="banana-peppers">Banana Peppers</label><br>
+          <input type="radio" value="0" checked="checked" name="banana-peppers">None</input><br>
+          <input type="radio" value="1" name="banana-peppers">Normal</input><br>
+          <input type="radio" value="2" name="banana-peppers">Extra</input><br>
+
+          <label for="roma-tomatoes">Roma Tomatoes</label><br>
+          <input type="radio" value="0" checked="checked" name="roma-tomatoes">None</input><br>
+          <input type="radio" value="1" name="roma-tomatoes">Normal</input><br>
+          <input type="radio" value="2" name="roma-tomatoes">Extra</input><br>
+
+          <label for="jalapeno">Jalapenos</label><br>
+          <input type="radio" value="0" checked="checked" name="jalapeno">None</input><br>
+          <input type="radio" value="1" name="jalapeno">Normal</input><br>
+          <input type="radio" value="2" name="jalapeno">Extra</input><br>
+
+          <label for="pineapple">Pineapple</label><br>
+          <input type="radio" value="0" checked="checked" name="pineapple">None</input><br>
+          <input type="radio" value="0" name="pineapple">Also None</input><br>
+          <input type="radio" value="0" name="pineapple">Are You Crazy? (Still None)</input><br>
+          <p class="div-switch" id="show-base"><br>Back to Basics</p>
+          <button class="btn" type="submit">Add Pizza</button>
+        </div>
+
+        
+      </form>
+      <div id="total-display">Your total is: $<span id="total"></span></div>
+      <button class="btn" id="checkout">Check Out</button>
+      
+    </div>
+  </body>
+</html> 
+
